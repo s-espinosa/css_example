@@ -1,0 +1,41 @@
+.class1 {
+  background-color: red;
+  height: 100px;
+  margin: 10px;
+}
+
+.class2 {
+  background-color: blue;
+  height: 100px;
+  margin: 10px;
+}
+
+/* no space - both classes applied to a single element */
+.class1.class2 {
+  background-color: purple;
+  height: 400px;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* space separated - child of any depth */
+.class1 .class2 {
+  background-color: orange;
+  height: 10px;
+  padding: 10px;
+}
+
+/* greater than - direct child */
+.class1 > .class2 {
+  background-color: black;
+  height: 50px;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* comma separated - applies to both */
+.class3, .class4 {
+  background-color: green;
+  height: 50px;
+  margin: 10px;
+}
